@@ -1,5 +1,6 @@
 const theme = {
   bgGd: "linear-gradient(94.46deg, #E359FF -9.16%, #267FE5 108.44%)",
+  bgColorWhite: "#F5F5F5",
   purple: "#8C00FF",
   dark: "#0A1424",
   pink: "#FE66CB",

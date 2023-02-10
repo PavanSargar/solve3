@@ -17,7 +17,7 @@ export default Button;
 
 const Container = styled.button`
   all: unset;
-  transition: all .3s ;
+  transition: all 0.3s;
 
   :hover {
     -webkit-transform: translate(0, -2px);
@@ -26,7 +26,7 @@ const Container = styled.button`
   }
 
   &.nav-btn {
-    padding: .8rem 3.5rem;
+    padding: 0.8rem 3.5rem;
     border: 1px solid ${(props) => props.theme.purple};
     border-radius: 6px;
     color: ${(props) => props.theme.purple};
@@ -35,7 +35,13 @@ const Container = styled.button`
       display: none;
     }
   }
-
+  &.secondary-btn {
+    padding: 0.8rem 3.5rem;
+    background-color: #0d1d35;
+    border: 1px solid ${(props) => props.theme.bgColorWhite};
+    border-radius: 6px;
+    color: ${(props) => props.theme.bgColorWhite};
+  }
   cursor: ${({ isDisabled }) => (isDisabled ? "not-allowed" : "pointer")};
 
   a {
