@@ -8,7 +8,7 @@ const Text = ({ children, className }) => {
 export default Text;
 
 const Container = styled.p`
-  width: 100%;
+  /* width: 100%; */
   max-width: none;
   padding-right: 0;
   font-family: Poppins, sans-serif;
@@ -19,6 +19,9 @@ const Container = styled.p`
   &.md {
     font-size: 20px;
   }
+  &.mb-3{
+    margin-bottom: 3rem;
+  }
   &.gd,
   .gd {
     background: -webkit-linear-gradient(135deg, #8b55d0, #475ac3);
@@ -27,10 +30,6 @@ const Container = styled.p`
   }
   &.white {
     color: ${(props) => props.theme.bgColorWhite};
-  }
-  &.bold,
-  .bold {
-    font-weight: bold;
   }
   &.link {
     cursor: pointer;
@@ -42,7 +41,29 @@ const Container = styled.p`
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    margin: 30px 30px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  &.card-title {
+    color: ${(props) => props.theme.bgColorWhite};
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  &.card-text {
+    color: ${(props) => props.theme.bgColorWhite};
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+  }
+  &.bold,
+  .bold {
+    font-weight: bold;
   }
   @media screen and (max-width: 992px) {
     font-size: 20px;

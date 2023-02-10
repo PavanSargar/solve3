@@ -13,13 +13,17 @@ const Container = styled.h2`
   max-width: none;
   min-width: 0;
   margin-bottom: 3px;
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   letter-spacing: -0.04em;
   background-color: inherit;
   font-weight: 600;
   &.font-lato {
     font-family: ${props=>props.theme.fontLato}, sans-serif !important;
+    line-height: 44px;
+  }
+  &.mt-5{
+    margin-top: 5rem;
   }
   &.md {
     width: auto;
