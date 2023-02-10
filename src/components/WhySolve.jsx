@@ -22,7 +22,9 @@ const WhySolve = () => {
         <GridItem xs={12} sm={12} md={6} lg={6} className="border">
           <Text className="left">Bots are a Problem</Text>
           <Container className="sub-heading">
-            <Text className="left">The faster the bot, the more its owner has to gain</Text>
+            <Text className="left">
+              The faster the bot, the more its owner has to gain
+            </Text>
           </Container>
         </GridItem>
       </Grid>
@@ -33,11 +35,11 @@ const WhySolve = () => {
 export default WhySolve;
 
 const Container = styled.div`
-&.main{
+  &.main {
     padding: ${(props) => props.theme.sectionMargin};
     background-color: ${(props) => props.theme.lightBg};
-}
-&.transparent-box{
+  }
+  &.transparent-box {
     position: "absolute";
     background-color: "#8C00FF33";
     height: "300px";
@@ -45,10 +47,10 @@ const Container = styled.div`
     transform: "rotate(15deg)";
     top: "400px";
     left: "170px";
-}
-&.sub-heading{
-    Text{
-        color: '#727272'
+  }
+  &.sub-heading {
+    Text {
+      color: "#727272";
     }
-}
+  }
 `;

@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import WhySolve from './components/WhySolve'
 import WhatNow from './components/WhatNow'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       {/* <Hero /> */}
       {/* <WhySolve /> */}
-      <WhatNow/>
+      {/* <WhatNow/> */}
+      <Footer />
     </Container>
   )
 }

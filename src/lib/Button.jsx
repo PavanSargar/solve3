@@ -35,6 +35,14 @@ const Container = styled.button`
       display: none;
     }
   }
+
+  &.sub-btn {
+    padding: 0.9rem 2.5rem;
+    background: ${(props) => props.theme.purple};
+    border-radius: 6px;
+    color: #fff;
+  }
+
   &.secondary-btn {
     padding: 0.8rem 3.5rem;
     background-color: #0d1d35;
