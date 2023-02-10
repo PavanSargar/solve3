@@ -7,9 +7,10 @@ const theme = {
   lightText: "#F5F5F5",
   blueBg: "0091FF",
   lightPink: "8C00FF",
+  cardBg: "#0D1D35",
   fontSegoe: "Segoe UI Regular",
   fontLato: "Lato",
-  sectionMargin: "5rem 8%",
+  sectionMargin: "3rem 4%",
 };
 
 export default theme;
