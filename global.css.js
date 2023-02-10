@@ -7,10 +7,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: ${(props) => props.theme.dark};
   scroll-behavior: smooth;
 }
-
+body {
+  background-color: ${(props) => props.theme.dark};
+}
 @font-face {
   font-family: "Segoe UI Regular";
   src: local("Segoe UI Regular"), url(${SEGOEUI}) format("woff")
