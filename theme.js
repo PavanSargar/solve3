@@ -1,10 +1,15 @@
 const theme = {
-  color: "#000035",
-  bgColor: "#F4F1F5",
-  gdLeft: "#475AC3",
-  gdRight: "#8B55D0",
-  sectionMargin: "5rem 8%"
+  bgGd: "linear-gradient(94.46deg, #E359FF -9.16%, #267FE5 108.44%)",
+  purple: "#8C00FF",
+  dark: "#0A1424",
+  pink: "#FE66CB",
+  lightBg: "#EAEAEA",
+  lightText: "#F5F5F5",
+  blueBg: "0091FF",
+  lightPink: "8C00FF",
+  fontSegoe: "Segoe UI Regular",
+  fontLato: "Lato",
+  sectionMargin: "5rem 8%",
 };
-
 
 export default theme;
