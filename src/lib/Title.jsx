@@ -19,10 +19,10 @@ const Container = styled.h2`
   background-color: inherit;
   font-weight: 600;
   &.font-lato {
-    font-family: ${props=>props.theme.fontLato}, sans-serif !important;
+    font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
     line-height: 44px;
   }
-  &.mt-5{
+  &.mt-5 {
     margin-top: 5rem;
   }
   &.md {
@@ -45,13 +45,16 @@ const Container = styled.h2`
   &.purple {
     color: ${(props) => props.theme.purple};
   }
-  @media screen and (max-width: 992px) {
-    font-size: 40px;
-  }
   @media screen and (max-width: 768px) {
     display: block;
     max-width: 100vw;
     font-size: 34px;
     text-align: left;
+  }
+  &.section-title {
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      margin: 0;
+    }
   }
 `;

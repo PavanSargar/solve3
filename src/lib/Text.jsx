@@ -19,7 +19,7 @@ const Container = styled.p`
   &.md {
     font-size: 20px;
   }
-  &.mb-3{
+  &.mb-3 {
     margin-bottom: 3rem;
   }
   &.gd,
@@ -37,30 +37,52 @@ const Container = styled.p`
   &.left {
     text-align: left;
   }
-  &.small-text {
+  &.section-small-text {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     margin-top: 4rem;
     margin-bottom: 4rem;
     text-align: center;
+    &.because {
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
   }
-  &.card-title {
+  &.what-now-card-title {
     color: ${(props) => props.theme.bgColorWhite};
     font-size: 28px;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
-  
-  &.card-text {
+  &.what-now-card-text {
     color: ${(props) => props.theme.bgColorWhite};
     font-size: 22px;
     line-height: 35px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 60px;
+    font-size: 1.2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
+      line-height: 1.4;
+    }
   }
+
+  &.what-now-text {
+    margin-bottom: 3rem;
+  }
+
   &.bold,
   .bold {
     font-weight: bold;
