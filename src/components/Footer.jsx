@@ -54,6 +54,7 @@ const Container = styled.div`
       all: unset;
       color: #fff;
       font-size: 1rem;
+      cursor: pointer;
     }
 
     span {

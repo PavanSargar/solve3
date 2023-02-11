@@ -18,12 +18,9 @@ export default Button;
 const Container = styled.button`
   all: unset;
   transition: all 0.3s;
+  position: relative;
+  z-index: 10;
 
-  :hover {
-    -webkit-transform: translate(0, -2px);
-    -ms-transform: translate(0, -2px);
-    transform: translate(0, -2px);
-  }
 
   &.nav-btn {
     padding: 0.8rem 3.5rem;
@@ -34,6 +31,12 @@ const Container = styled.button`
     @media screen and (max-width: 768px) {
       display: none;
     }
+
+    :hover {
+    -webkit-transform: translate(0, -2px) !important;
+    -ms-transform: translate(0, -2px) !important;
+    transform: translate(0, -2px) !important;
+  }
   }
 
   &.sub-btn {
@@ -41,6 +44,13 @@ const Container = styled.button`
     background: ${(props) => props.theme.purple};
     border-radius: 6px;
     color: #fff;
+  }
+
+  &.blue-btn {
+    padding: 0.9rem 2.5rem;
+    border-radius: 6px;
+    color: #fff;
+    background-color: ${(props) => props.theme.blueBg};
   }
 
   &.secondary-btn {
@@ -69,5 +79,12 @@ const Container = styled.button`
   &.card-btn {
     margin-right: 0px;
     padding: 10px 20px;
+  }
+
+
+  :hover {
+    -webkit-transform: translate(0, -2px) !important;
+    -ms-transform: translate(0, -2px) !important;
+    transform: translate(0, -2px) !important;
   }
 `;

@@ -12,7 +12,11 @@ const Navbar = () => {
     <Nav>
       <Container className="brand">
         <Image src={LOGO} alt="" />
-        <h1>Solve3!</h1>
+        <div className="content">
+          <h1>Solve3!</h1>
+          <p>WEB3 CAPTCHA</p>
+        </div>
+
         {/* <Image src={LOGO} alt="" /> */}
       </Container>
 
@@ -89,6 +93,7 @@ const Navbar = () => {
 export default Navbar;
 
 const Nav = styled.nav`
+  position: relative;
   opacity: 1;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
@@ -150,10 +155,15 @@ const Container = styled.div`
     gap: 12px;
     cursor: pointer;
 
-    a {
-      all: unset;
-      cursor: pointer;
-      color: #4f59c4;
+    .content {
+      h1 {
+        color: #fff;
+        text-transform: uppercase;
+      }
+      p {
+        color: #fff;
+        font-family: ${props => props.theme.fontSegoe};
+      }
     }
   }
 

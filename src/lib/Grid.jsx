@@ -13,8 +13,6 @@ export const Grid = styled.div`
   ${({ height }) => height && `height: ${height}`}
   ${({ gap }) => gap && `gap: ${gap}`}
 
-
-
   &.border {
     border: 1px solid black;
   }
@@ -33,18 +31,24 @@ export const GridItem = styled.div`
     &.border {
     border: 1px solid red;
   }
-  &.card {
+  &.what-now-card {
     padding: ${(props) => props.theme.sectionMargin};
-    /* width: 50%; */
     height: 700px;
     background: #0d1d35;
     backdrop-filter: blur(101px);
-    margin: 2rem;
+    margin: 0 2rem 2rem 2rem;
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 10px;
-    @media screen and (max-width: 1400px){
+    @media screen and (max-width: 1175px) {
       height: auto;
     }
+    @media screen and (max-width: 768px) {
+      margin: 0 0 2rem 0;
+      height: auto;
+      padding: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 1rem;
+    }
   }
-
 `;

@@ -3,20 +3,27 @@ import styled from "styled-components";
 import Title from "../lib/Title";
 import Text from "../lib/Text";
 import { Grid, GridItem } from "../lib/Grid";
-import Img1 from "../assets/whysolve1.svg";
-import Img2 from "../assets/whysolve2.svg";
+import Img1 from "../assets/whySolveImg1.svg";
+import Img2 from "../assets/whySolveImg2.svg";
+import Img3 from "../assets/whySolve-img-3.png";
+import Img4 from "../assets/why-solve-img-4.png";
+import Img5 from "../assets/why-solve-img-5.png";
+import Img6 from "../assets/why-solve-img-6.png";
 
 const WhySolve = () => {
   return (
     <Container className="main">
-      <Title className="purple font-lato">Why SOLVE3 ?</Title>
-      <Text className="bold small-text font-lato">Because.</Text>
+      <Container className="why-solve-title">
+        <Title className="purple font-lato">Why SOLVE3 ?</Title>
+        <Text className="bold section-small-text because font-lato">
+          Because.
+        </Text>
+      </Container>
       <Container>
-        <Grid container>
+        <Grid container justifyContent="space-between">
           <GridItem xs={12} sm={12} md={5} lg={5}>
-            <Container>
+            <Container className="main-img-container">
               <img src={Img1} alt="Why Solve 1" />
-              <TransparentBox1 />
             </Container>
           </GridItem>
 
@@ -27,7 +34,11 @@ const WhySolve = () => {
                 The faster the bot, the more its owner has to gain
               </Container>
               <Container className="text-pts">
-                <Container className="img-container">csc</Container>
+                <Container className="img-container">
+                  <Container className="circle pink">
+                    <img className="img" src={Img3} />
+                  </Container>
+                </Container>
                 <Container className="text-pts-container">
                   <Container className="text-pts-title">Advantage</Container>
                   <Container className="text-pts-text">
@@ -40,7 +51,11 @@ const WhySolve = () => {
               </Container>
 
               <Container className="text-pts">
-                <Container className="img-container">csc</Container>
+                <Container className="img-container">
+                  <Container className="circle blue">
+                    <img className="img" src={Img4} />
+                  </Container>
+                </Container>
                 <Container className="text-pts-container">
                   <Container className="text-pts-title">Strength</Container>
                   <Container className="text-pts-text">
@@ -53,8 +68,15 @@ const WhySolve = () => {
             </Container>
           </GridItem>
         </Grid>
-        <Grid container >
-          <GridItem xs={12} sm={12} md={7} lg={7} >
+        <Container className="gap" />
+        <Grid container>
+          <GridItem xs={12} sm={12} md={0} lg={0}>
+            <Container className="why-solve-img2-mobile main-img-container">
+              <img src={Img2} alt="Why Solve 1" />
+            </Container>
+          </GridItem>
+
+          <GridItem xs={12} sm={12} md={7} lg={7}>
             <Container className="card-container">
               <Container className="card-title">Bots are a business</Container>
               <Container className="card-subtitle">
@@ -62,7 +84,11 @@ const WhySolve = () => {
                 model.
               </Container>
               <Container className="text-pts">
-                <Container className="img-container">csc</Container>
+                <Container className="img-container">
+                  <Container className="circle green">
+                    <img className="img" src={Img5} />
+                  </Container>
+                </Container>
                 <Container className="text-pts-container">
                   <Container className="text-pts-title">Value</Container>
                   <Container className="text-pts-text">
@@ -76,7 +102,11 @@ const WhySolve = () => {
               </Container>
 
               <Container className="text-pts">
-                <Container className="img-container">csc</Container>
+                <Container className="img-container">
+                  <Container className="circle blue">
+                    <img className="img" src={Img6} />
+                  </Container>
+                </Container>
                 <Container className="text-pts-container">
                   <Container className="text-pts-title">Developers</Container>
                   <Container className="text-pts-text">
@@ -89,9 +119,8 @@ const WhySolve = () => {
           </GridItem>
 
           <GridItem xs={12} sm={12} md={5} lg={5}>
-            <Container>
+            <Container className="why-solve-img2-desktop">
               <img src={Img2} alt="Why Solve 1" />
-              <TransparentBox2 />
             </Container>
           </GridItem>
         </Grid>
@@ -103,50 +132,75 @@ const WhySolve = () => {
 export default WhySolve;
 
 const Container = styled.div`
-    &.main  {
+  &.main {
     padding: ${(props) => props.theme.sectionMargin};
     background-color: ${(props) => props.theme.lightBg};
   }
-  &.sub-heading {
-    Text {
-      color: "#727272";
-  }
-  &.transparent-box {
-    position: "absolute";
-    background-color: "#8C00FF33";
-    height: "300px";
-    width: "450px";
-    transform: "rotate(15deg)";
-    top: "400px";
-    left: "170px";
+  &.why-solve-title {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   &.sub-heading {
     Text {
       color: "#727272";
     }
+  }
+  &.main-img-container {
+    @media screen and (max-width: 768px) {
+      text-align: center;
     }
+  }
+  &.why-solve-img2-desktop {
+    text-align: end;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &.why-solve-img2-mobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
   img {
-    position: relative;
-    z-index: 2;
-    width: 45rem;
+    width: 35rem;
+    @media screen and (max-width: 1400px) {
+      width: 22rem;
+    }
+    @media screen and (max-width: 992px) {
+      width: 22rem;
+    }
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
   }
-  &.card-container {
-    margin: 2rem;
+  &.gap {
+    margin: 3rem;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
   }
   &.card-title {
     font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
     font-weight: 400;
     font-size: 2.5rem;
-    /* margin-top: 1rem; */
     margin-bottom: 1rem;
+    @media screen and (max-width: 992px) {
+      font-size: 2rem;
+    }
   }
   &.card-subtitle {
     font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.01em;
     color: #727272;
     margin-bottom: 1rem;
+    @media screen and (max-width: 992px) {
+      font-size: 1.1rem;
+    }
   }
   &.text-pts {
     display: flex;
@@ -158,41 +212,45 @@ const Container = styled.div`
     font-size: 1.5rem;
     color: #222222;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+    @media screen and (max-width: 992px) {
+      font-size: 1.2rem;
+    }
   }
   &.text-pts-text {
+    margin-left: 1rem;
     font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.01em;
     color: #727272;
+    @media screen and (max-width: 992px) {
+      font-size: 1.1rem;
+    }
   }
   &.img-container {
-    width: 10%;
+    width: 50px;
+    text-align: center;
+    .img {
+      width: 50%;
+      height: auto;
+    }
   }
-`;
-
-const TransparentBox1 = styled.div`
-  position: relative;
-  /* border: 2px solid red; */
-  background-color: #8c00ff33;
-  height: 20rem;
-  width: 35rem;
-  transform: rotate(15deg);
-  top: -270px;
-  filter: blur(2px);
-  border-radius: 15px;
-  left: 15%;
-  z-index: 1;
-`;
-const TransparentBox2 = styled.div`
-  position: relative;
-  background-color: #8c00ff33;
-  height: 20rem;
-  width: 35rem;
-  transform: rotate(-15deg);
-  top: -270px;
-  filter: blur(2px);
-  border-radius: 15px;
-  left: 5%;
-  z-index: 1;
+  &.circle {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    &.pink {
+      background-color: #fe66cb33;
+    }
+    &.blue {
+      background-color: #64b5f633;
+    }
+    &.green {
+      background-color: #00efd133;
+    }
+  }
 `;
