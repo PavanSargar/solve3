@@ -213,6 +213,7 @@ const Container = styled.div`
     color: #222222;
     margin-bottom: 1rem;
     margin-left: 1rem;
+    font-family: ${(props) => props.theme.fontLato}, sans-serif;
     @media screen and (max-width: 992px) {
       font-size: 1.2rem;
     }

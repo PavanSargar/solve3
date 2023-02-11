@@ -65,7 +65,6 @@ const Container = styled.h2`
 
   &.font-lato {
     font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
-    font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
     line-height: 44px;
   }
   &.mt-5 {
