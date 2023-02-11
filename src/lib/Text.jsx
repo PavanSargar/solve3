@@ -19,6 +19,9 @@ const Container = styled.p`
   &.md {
     font-size: 20px;
   }
+  &.font-lato {
+    font-family: ${(props) => props.theme.fontLato}, sans-serif !important;
+  }
   &.mb-3 {
     margin-bottom: 3rem;
   }
@@ -59,6 +62,33 @@ const Container = styled.p`
       font-size: 1.2rem;
     }
   }
+  &.protect-sub-title {
+    color: #8c00ff;
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 4rem 0 1rem 0;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      margin: 2rem 0 2rem 0;
+    }
+  }
+  &.protect-para {
+    font-size: 1.2rem;
+    line-height: 40px;
+    @media screen and (max-width: 768px) {
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+  }
+  &.protect-para-mobile {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+  }
   &.what-now-card-title {
     color: ${(props) => props.theme.bgColorWhite};
     font-size: 28px;
@@ -93,6 +123,7 @@ const Container = styled.p`
   .bold {
     font-weight: bold;
   }
+
   @media screen and (max-width: 992px) {
     font-size: 20px;
   }

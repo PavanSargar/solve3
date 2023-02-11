@@ -5,7 +5,6 @@ import Text from "../lib/Text";
 import Img1 from "../assets/whatelse1.svg";
 import Img2 from "../assets/whatelse2.svg";
 import Img3 from "../assets/whatelse3.svg";
-
 import { Grid, GridItem } from "../lib/Grid";
 
 const WhatElse = () => {
@@ -127,7 +126,7 @@ const Container = styled.div`
     border-radius: 10px;
     @media screen and (max-width: 768px) {
       padding: 1rem;
-      margin: 0 0 3rem 0;
+      margin: 0 0 2rem 0;
     }
   }
   &.card-title {

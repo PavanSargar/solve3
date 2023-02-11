@@ -6,6 +6,7 @@ import WhySolve from "./components/WhySolve";
 import WhatNow from "./components/WhatNow";
 import WhatElse from "./components/WhatElse";
 import Footer from "./components/Footer";
+import Protect from "./components/Protect";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <WhySolve />
       <WhatNow />
       <WhatElse />
+      <Protect />
       <Footer />
     </Container>
   );

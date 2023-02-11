@@ -13,8 +13,6 @@ export const Grid = styled.div`
   ${({ height }) => height && `height: ${height}`}
   ${({ gap }) => gap && `gap: ${gap}`}
 
-
-
   &.border {
     border: 1px solid black;
   }
@@ -35,7 +33,6 @@ export const GridItem = styled.div`
   }
   &.what-now-card {
     padding: ${(props) => props.theme.sectionMargin};
-    /* width: 50%; */
     height: 700px;
     background: #0d1d35;
     backdrop-filter: blur(101px);
@@ -46,7 +43,7 @@ export const GridItem = styled.div`
       height: auto;
     }
     @media screen and (max-width: 768px) {
-      margin: 0 0 3rem 0;
+      margin: 0 0 2rem 0;
       height: auto;
       padding: 2rem;
     }
