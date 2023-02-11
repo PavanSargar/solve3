@@ -31,6 +31,7 @@ function App() {
       <Protect />
       <div className="line" />
 
+      <Carousel />
       <Footer />
     </Container>
   );
