@@ -53,8 +53,8 @@ const WhySolve = () => {
             </Container>
           </GridItem>
         </Grid>
-        <Grid container >
-          <GridItem xs={12} sm={12} md={7} lg={7} >
+        <Grid container>
+          <GridItem xs={12} sm={12} md={7} lg={7}>
             <Container className="card-container">
               <Container className="card-title">Bots are a business</Container>
               <Container className="card-subtitle">
@@ -103,28 +103,15 @@ const WhySolve = () => {
 export default WhySolve;
 
 const Container = styled.div`
-    &.main  {
+  &.main {
     padding: ${(props) => props.theme.sectionMargin};
     background-color: ${(props) => props.theme.lightBg};
   }
   &.sub-heading {
     Text {
       color: "#727272";
-  }
-  &.transparent-box {
-    position: "absolute";
-    background-color: "#8C00FF33";
-    height: "300px";
-    width: "450px";
-    transform: "rotate(15deg)";
-    top: "400px";
-    left: "170px";
-  }
-  &.sub-heading {
-    Text {
-      color: "#727272";
     }
-    }
+  }
   img {
     position: relative;
     z-index: 2;

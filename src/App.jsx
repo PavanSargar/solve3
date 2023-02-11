@@ -1,31 +1,30 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import WhySolve from './components/WhySolve'
-import WhatNow from './components/WhatNow'
-import WhatElse from './components/WhatElse'
-import Footer from './components/Footer'
+import React, { useState } from "react";
+import styled from "styled-components";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import WhySolve from "./components/WhySolve";
+import WhatNow from "./components/WhatNow";
+import WhatElse from "./components/WhatElse";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Container className="App">
       <Navbar />
 
-      <Footer />
       <Hero />
       <WhySolve />
-      <WhatNow/>
+      <WhatNow />
       <WhatElse />
+      <Footer />
     </Container>
-  )
+  );
 }
 
-export default App
-
+export default App;
 
 const Container = styled.div`
   h1 {
     color: white;
   }
-`
+`;
