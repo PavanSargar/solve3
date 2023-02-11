@@ -37,7 +37,13 @@ const Container = styled.p`
   &.left {
     text-align: left;
   }
-  &.section-small-text {
+
+  &.footer-text {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  &.small-text {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -93,5 +99,12 @@ const Container = styled.p`
   @media screen and (max-width: 768px) {
     font-size: 16px;
     text-align: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    &.footer-text {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
 `;

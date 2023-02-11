@@ -6,11 +6,14 @@ export const Grid = styled.div`
   display: ${({ container }) => (container ? "flex" : "block")};
   flex-wrap: wrap;
   flex-direction: ${({ direction }) => (direction ? direction : "row")};
+  ${({ gap }) => gap && `gap: ${gap}`}
   ${({ justifyContent }) =>
     justifyContent && `justify-content: ${justifyContent}`};
   ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
   ${({ height }) => height && `height: ${height}`}
   ${({ gap }) => gap && `gap: ${gap}`}
+
+
 
   &.border {
     border: 1px solid black;
