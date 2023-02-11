@@ -43,7 +43,7 @@ const Container = styled.p`
     text-align: left;
   }
 
-  &.small-text {
+  &.section-small-text {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;

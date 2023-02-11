@@ -11,7 +11,6 @@ function App() {
   return (
     <Container className="App">
       <Navbar />
-
       <Hero />
       <WhySolve />
       <WhatNow />
