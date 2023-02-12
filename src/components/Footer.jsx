@@ -5,6 +5,8 @@ import Button from "../lib/Button";
 import Text from "../lib/Text";
 import { Grid, GridItem } from "../lib/Grid";
 
+import LOGO from "../assets/logo.svg";
+
 const Footer = () => {
   return (
     <Container className="main">
@@ -19,6 +21,14 @@ const Footer = () => {
           <Container className="input">
             <input placeholder="Enter your email" type="text" />
             <Button className="sub-btn">Subscribe</Button>
+          </Container>
+
+          <Container className="brand-logo">
+            <Image src={LOGO} alt="" />
+            <div className="content">
+              <h1>Solve3!</h1>
+              <p>WEB3 CAPTCHA</p>
+            </div>
           </Container>
         </GridItem>
       </Grid>
@@ -42,6 +52,30 @@ const Container = styled.div`
   &.main {
     padding: ${({ theme }) => theme.sectionMargin};
     background-color: ${({ theme }) => theme.cardBg};
+  }
+
+  &.brand-logo {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .content {
+      h1 {
+        color: #fff;
+        text-transform: uppercase;
+      }
+      p {
+        color: #fff;
+        font-family: ${(props) => props.theme.fontSegoe};
+      }
+    }
   }
 
   &.footer-details {
@@ -106,4 +140,9 @@ const Container = styled.div`
     margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
+`;
+
+const Image = styled.img`
+  width: 48.74px;
+  height: 56px;
 `;

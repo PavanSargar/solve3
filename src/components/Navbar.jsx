@@ -59,14 +59,14 @@ const Navbar = () => {
         </p>
         <p>
           <span>
-            <a onClick={() => setOpen(false)} href="#demo">
+            <a onClick={() => setOpen(false)} href="https://demo.solve3.org/" target="_blank">
               Demo
             </a>
           </span>
         </p>
         <p>
           <span>
-            <a onClick={() => setOpen(false)} href="#twitter">
+            <a onClick={() => setOpen(false)} target="_blank" href="https://twitter.com/Solve3_org">
               Twitter
             </a>
           </span>
@@ -113,8 +113,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: none;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
   font-weight: 300;
 `;
 

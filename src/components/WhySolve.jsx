@@ -135,6 +135,13 @@ const Container = styled.div`
   &.main {
     padding: ${(props) => props.theme.sectionMargin};
     background-color: ${(props) => props.theme.lightBg};
+
+    padding-top: 5rem;
+
+    @media screen and (max-width: 576px) {
+      /* padding-top: 0; */
+    }
+
   }
   &.why-solve-title {
     @media screen and (max-width: 768px) {

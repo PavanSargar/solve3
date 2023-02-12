@@ -50,14 +50,15 @@ const Container = styled.h2`
     }
 
     @media screen and (max-width: 768px) {
-      margin-left: 2.5rem;
+      /* margin-left: 2.5rem; */
+      margin-bottom: 1rem;
     }
   }
 
   &.hero-text {
     font-size: calc(3vw + 1rem);
     letter-spacing: 0.64px;
-
+    margin: .5rem auto;
     @media screen and (max-width: 768px) {
       text-align: center;
     }

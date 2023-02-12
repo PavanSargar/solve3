@@ -74,7 +74,7 @@ const Carousel = () => {
 
       <Container className="controls">
         <img onClick={handleLeftClick} className="left" src={LEFT} alt="" />
-        {cards.map((circle, index) => (
+        {circles.map((circle, index) => (
           <Circle
             id="active"
             onClick={(e) => activeCircleHandler(e, index)}

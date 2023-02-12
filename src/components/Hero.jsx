@@ -41,7 +41,7 @@ const Container = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 576px) {
-      margin-bottom: -10.8rem;
+      margin-bottom: -8rem;
     }
   }
 
@@ -55,6 +55,7 @@ const Container = styled.div`
   }
 
   &.btn-container {
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;

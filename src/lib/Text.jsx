@@ -34,8 +34,11 @@ const Container = styled.p`
   &.white {
     color: ${(props) => props.theme.bgColorWhite};
   }
-  &.link {
+  &.link,
+  .link {
+    all: unset;
     cursor: pointer;
+    text-decoration: none;
   }
   &.left {
     text-align: left;
@@ -124,18 +127,59 @@ const Container = styled.p`
     font-weight: bold;
   }
 
+  &.about-text {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    color: #d9d9d9;
+    letter-spacing: 0.03em;
+
+    .purple {
+      color: ${(props) => props.theme.purple};
+      font-weight: bold;
+    }
+  }
+
+  &.about-sub-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &.hero-description {
+  
+
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    width: 65%;
+
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+
   @media screen and (max-width: 992px) {
     font-size: 20px;
   }
   @media screen and (max-width: 768px) {
     font-size: 16px;
     text-align: left;
-  }
 
-  @media screen and (max-width: 768px) {
     &.footer-text {
       text-align: center;
       font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    &.footer-text {
+      font-size: 1.5rem;
     }
   }
 `;
