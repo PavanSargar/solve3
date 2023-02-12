@@ -59,14 +59,22 @@ const Navbar = () => {
         </p>
         <p>
           <span>
-            <a onClick={() => setOpen(false)} href="https://demo.solve3.org/" target="_blank">
+            <a
+              onClick={() => setOpen(false)}
+              href="https://demo.solve3.org/"
+              target="_blank"
+            >
               Demo
             </a>
           </span>
         </p>
         <p>
           <span>
-            <a onClick={() => setOpen(false)} target="_blank" href="https://twitter.com/Solve3_org">
+            <a
+              onClick={() => setOpen(false)}
+              target="_blank"
+              href="https://twitter.com/Solve3_org"
+            >
               Twitter
             </a>
           </span>
@@ -98,6 +106,10 @@ const Nav = styled.nav`
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   bottom: auto;
   z-index: 999;
   display: -webkit-box;
@@ -112,6 +124,9 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #0A1424;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: none;
   font-weight: 300;
 `;
@@ -160,7 +175,7 @@ const Container = styled.div`
       }
       p {
         color: #fff;
-        font-family: ${props => props.theme.fontSegoe};
+        font-family: ${(props) => props.theme.fontSegoe};
       }
     }
   }

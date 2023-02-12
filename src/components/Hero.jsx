@@ -32,7 +32,7 @@ export default Hero;
 
 const Container = styled.div`
   &.main {
-    margin-top: -5rem;
+    margin-top: 1rem;
     padding: ${(props) => props.theme.sectionMargin};
     height: 100vh;
     display: flex;
